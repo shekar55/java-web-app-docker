@@ -20,7 +20,7 @@ node{
            }
            steps {
                 sh 'docker login --username=$DOCKER_HUB_LOGIN_USR --password=$DOCKER_HUB_LOGIN_PSW'
-                sh  'docker push chandu5562/java-dockerswarm'
+                sh  'docker push chandu5562/java-dockerswarm:${buildNumber}'
             }
         }
     // Remove local image in Jenkins Server
